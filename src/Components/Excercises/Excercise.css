@@ -1,0 +1,17 @@
+.info{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+
+.titles{
+    padding-left: 50px;
+}
+
+.excercise{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+}
