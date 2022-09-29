@@ -23,6 +23,26 @@
     font-weight: 900;
     color: black;
 }
+.excercise-time{
+    background-color: lightblue;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+/* #ex-time{
+    display: flex;
+    justify-content: space-between; */
+/* } */
+.break-time{
+    background-color: lightblue;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 20px;
+}
 .timer a:hover{
     background-color: salmon;
 }

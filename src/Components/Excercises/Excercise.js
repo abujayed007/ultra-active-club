@@ -5,24 +5,36 @@ import Package from '../Package/Package';
 import './Excercise.css'
 
 const Excercise = () => {
-    const [excercises, setExcercises] = useState([])
+    const [activities, setActivities] = useState([])
+    const [cart, setCart] = useState([])
     useEffect(() => {
         fetch('fakedata.json')
         .then(res => res.json())
-        .then(data =>setExcercises(data))
-    },[])
+        .then(data =>setActivities(data))
+    },[]);
+
+    const hanldleAddToTime = (activity) => {
+      // console.log(activity);
+      const newCart = [...cart, activity]
+     setCart(newCart)
+    };
     return (
       <div className='excercise-container'>
        <div>
        <Header></Header>
           <div className='info'>
             {
-                excercises.map(excercise => <Package key={excercise.id} excercise={excercise}></Package>)
+                activities.map(activity =><Package  
+                  key={activity.id} 
+                  activity={activity}
+                  handleAddToTime={hanldleAddToTime}>
+                  </Package>)
             } 
-        </div>
+          </div>
        </div>
         <div>
-        <Cart></Cart>
+          <h1>Cart: {cart.length}</h1>
+        {/* <Cart></Cart> */}
         </div>
       </div>
     );
