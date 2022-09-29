@@ -2,21 +2,30 @@ import React from 'react';
 import Profile from '../Profile/Profile';
 import './Cart.css'
 
-const Cart = () => {
+const Cart = (props) => {
+  const {name, seconds} = props.cart;
+  console.log(props)
+  let second = 0;
+  for (const item of props.cart){
+    second = parseFloat(second  + item.seconds)
+   }
+   const setTimer = () =>{
+   
+   }
 
     return (
         <div className='cart'>
             <Profile></Profile>
             <h2>Add a break</h2>
           <div className="timer">
-          <a href="/10">10s</a>
-            <a href="20">20s</a>
-            <a href="30">30s</a>
-            <a href="60">60s</a>
+            <button onClick={setTimer}>10s</button>
+            <button onClick={setTimer}>20s</button>
+            <button onClick={setTimer}>30s</button>
+            <button onClick={setTimer}>60s</button>
           </div>
           <div>
-          <h3 className='excercise-time'>Excercise Time</h3>
-          <h3 className='break-time'>Break Time</h3>
+          <h3 className='excercise-time'>Excercise Time: <p>{second} seconds</p> </h3>
+          <h3 className='break-time'>Break Time: <p> seconds</p> </h3>
            
           </div>
         </div>

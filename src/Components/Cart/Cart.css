@@ -15,35 +15,41 @@
     padding-top: 20px;
 
 }
-.timer a{
+.timer button{
     text-decoration: none;
     background-color: lightblue;
     padding: 20px;
     border-radius: 50%;
     font-weight: 900;
     color: black;
+    border: none;
 }
 .excercise-time{
     background-color: lightblue;
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     border-radius: 10px;
     padding-left: 20px;
+    color: whitesmoke;
 }
 /* #ex-time{
     display: flex;
     justify-content: space-between; */
 /* } */
 .break-time{
+    justify-content: space-evenly;
     background-color: lightblue;
     height: 70px;
     display: flex;
     align-items: center;
     border-radius: 10px;
     padding-left: 20px;
+    color: whitesmoke;
+
 }
-.timer a:hover{
+.timer button:hover{
     background-color: salmon;
 }
 @media screen and (max-width:600px) {
