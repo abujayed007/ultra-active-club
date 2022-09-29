@@ -10,7 +10,9 @@
     padding-left: 5px;
 }
 .package-info{
-    padding: 8px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     row-gap: 50px;
 }
 .package-info p{
@@ -26,7 +28,6 @@
     font-weight: 900;
     background-color:lightgreen;
     border: none;
-    padding-bottom: 10px;
 
 }
 .add-btn:hover{

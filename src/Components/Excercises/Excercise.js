@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import Header from '../Header/Header';
 import Package from '../Package/Package';
 import './Excercise.css'
 
@@ -11,15 +12,17 @@ const Excercise = () => {
         .then(data =>setExcercises(data))
     },[])
     return (
-      <div>
-        <h2 className='titles'>Select Today's Excercises</h2>
+      <div className='excercise-container'>
+       <div>
+       <Header></Header>
           <div className='info'>
-            <div className='excercise'>
             {
-                excercises.map(excercise => <Package excercise={excercise}></Package>)
-            }
-            </div>
-            <Cart></Cart>
+                excercises.map(excercise => <Package key={excercise.id} excercise={excercise}></Package>)
+            } 
+        </div>
+       </div>
+        <div>
+        <Cart></Cart>
         </div>
       </div>
     );

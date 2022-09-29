@@ -1,5 +1,6 @@
 [
     {
+      "id" : 1,
       "name": "Skipping Rope",
       "ages": 25,
       "seconds":30,
@@ -7,13 +8,15 @@
       "title": "Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities. "
     },
     {
-      "name": "Push-Ups",
+      "id" : 2,
+      "name": "Push-Up",
       "ages": 30,
       "seconds": 25,
       "img": "https://hips.hearstapps.com/hmg-prod/images/mh-formcheck-index-social-1551985785.png",
       "title": "Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities. "
     },
     {
+      "id" : 3,
       "name": "Cycling",
       "ages": 20,
       "seconds": 30,
@@ -21,6 +24,7 @@
       "title": "Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities. "
     },
     {
+      "id" : 4,
       "name": "Running",
       "ages": 22,
       "seconds": 30,
@@ -28,6 +32,7 @@
       "title": "Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities. "
     },
     {
+      "id" : 5,
       "name": "Dumbling",
       "ages": 28,
       "seconds": 15,
@@ -35,7 +40,8 @@
       "title": "Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities. "
     },
     {
-      "name": "Squats",
+      "id" : 6,
+      "name": "Weight-Lifting",
       "ages": 21,
       "seconds": 25,
       "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gym-man-lifting-weights-royalty-free-image-1597231152.jpg",

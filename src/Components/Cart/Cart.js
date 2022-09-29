@@ -1,9 +1,18 @@
 import React from 'react';
+import Profile from '../Profile/Profile';
+import './Cart.css'
 
 const Cart = () => {
     return (
-        <div>
-            <h1>Selected Summary</h1>
+        <div className='cart'>
+            <Profile></Profile>
+            <h2>Add a break</h2>
+          <div className="timer">
+          <a href="/10">10s</a>
+            <a href="20">20s</a>
+            <a href="30">30s</a>
+            <a href="60">60s</a>
+          </div>
         </div>
     );
 };
