@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Header from '../Header/Header';
 import Package from '../Package/Package';
@@ -18,6 +18,7 @@ const Excercise = () => {
       const newCart = [...cart, activity]
      setCart(newCart)
     }
+
     return (
       <div className='excercise-container'>
        <div>
@@ -33,7 +34,9 @@ const Excercise = () => {
           </div>
        </div>
         <div>
-        <Cart cart={cart}></Cart>
+             
+             <Cart cart={cart}></Cart>
+             
         </div>
       </div>
     );

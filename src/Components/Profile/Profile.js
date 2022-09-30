@@ -18,6 +18,7 @@ const Profile = () => {
                 <h2>28 Years<p>Age</p> </h2>
                 </div>
             </div>
+            
         </div>
     );
 };
