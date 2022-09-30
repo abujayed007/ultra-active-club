@@ -51,7 +51,7 @@ useEffect(() => {
           </div>
           <div className='activity'>
           <button onClick={diffToast} className='activity-btn'>Activity Completed</button>
-          <ToastContainer />
+          <ToastContainer   position="top-center"/>
           </div>
             
           
